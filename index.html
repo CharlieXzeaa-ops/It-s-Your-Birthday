@@ -60,11 +60,17 @@ display:block;
 
 <body>
 
-<section class="slide">
+<section class="slide hero" id="home">
+
 <img src="home.png" alt="Home">
+
+<a href="#details" class="journey-btn">
+🌸 Begin the Journey
+</a>
+
 </section>
 
-<section class="slide">
+<section class="slide" id="details">
 <img src="details.png" alt="Details">
 </section>
 
@@ -78,3 +84,47 @@ display:block;
 
 </body>
 </html>
+.hero{
+position:relative;
+}
+
+.journey-btn{
+
+position:absolute;
+
+left:6%;
+bottom:18%;
+
+text-decoration:none;
+
+padding:18px 34px;
+
+border-radius:60px;
+
+background:rgba(255,255,255,.82);
+
+backdrop-filter:blur(10px);
+
+color:#53283f;
+
+font-size:22px;
+
+font-weight:bold;
+
+box-shadow:0 10px 30px rgba(0,0,0,.18);
+
+transition:.35s;
+
+}
+
+.journey-btn:hover{
+
+transform:translateY(-4px) scale(1.04);
+
+box-shadow:0 18px 45px rgba(0,0,0,.25);
+
+}
+
+html{
+scroll-behavior:smooth;
+}
